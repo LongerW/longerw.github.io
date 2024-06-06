@@ -136,15 +136,14 @@
     $container.removeClass('mobile-nav-on');
   });
 
-  $(function() {
+  (function() {
     const span = $('<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>')
     const script = $('<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>')
     console.log('span',span);
-    document.body.appendChild(script)
-    document.body.appendChild(span)
+    document.body.appendChild(script[0])
+    document.body.appendChild(span[0])
   })()
 
-  console.log('span');
   
 
 
